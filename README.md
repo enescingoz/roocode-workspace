@@ -1,5 +1,5 @@
-# roocode-workspace
-The roocode-workspace repository is a powerful and flexible workspace template designed specifically for developers using Roo Code. It provides an optimized environment to streamline project development through SPARC orchestration and AI-assisted workflows in Visual Studio Code (VS Code).
+# roomode-advanced
+The roomode-advanced repository is a powerful and flexible workspace template designed specifically for developers using Roo Code. It provides an optimized environment to streamline project development through SPARC orchestration and AI-assisted workflows in Visual Studio Code (VS Code).
 
 This repository introduces enhanced modes that make it easier to develop, manage, and maintain your projects efficiently. By leveraging persistent project context and fine-tuned mode interactions, it minimizes token consumption while maximizing productivity.
 
@@ -7,17 +7,13 @@ This repository introduces enhanced modes that make it easier to develop, manage
 
 ---
 
-## Sources
+## Credits
+This workspace was created by **Enes Çingöz**.
+
+This project builds upon the work of:
 - **RooFlow (0.3.6)**: https://github.com/GreatScottyMac/RooFlow
 - **roocode-modes**: https://github.com/enescingoz/roocode-modes
-- https://www.linkedin.com/pulse/boomerang-tasks-automating-code-development-roo-sparc-reuven-cohen-nr3zc
-
----
-
-☕ Before exploring the quick installation steps, grab your coffee-and if you enjoy my work, don’t forget to buy me a coffee! 
-
-<a href="https://buymeacoffee.com/enescingoz" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
+- An article by Reuven Cohen on Boomerang Tasks: https://www.linkedin.com/pulse/boomerang-tasks-automating-code-development-roo-sparc-reuven-cohen-nr3zc
 
 ---
 
@@ -25,9 +21,24 @@ This repository introduces enhanced modes that make it easier to develop, manage
 ### Requirements
 - Vscode as an editor
 
+### Quick Setup (Single File)
+
+If you only want to use the custom modes without cloning the entire repository, you can download the `.roomodes` file directly into your project's root directory.
+
+**Using curl:**
+```bash
+curl -o .roomodes https://raw.githubusercontent.com/benzntech/roocode-workspace/main/.roomodes
+```
+
+**Using wget:**
+```bash
+wget -O .roomodes https://raw.githubusercontent.com/benzntech/roocode-workspace/main/.roomodes
+```
+
+---
 ### Instructions
 1. **Create a Repository from Template**  
-   Click the `Use this template` button located at the top-right of the [repository page](https://github.com/enescingoz/roocode-workspace). This will allow you to create a new repository based on the template. 
+   Click the `Use this template` button located at the top-right of the [repository page](https://github.com/benzntech/roocode-workspace). This will allow you to create a new repository based on the template. 
   
 2. **Initialize Your Project Repository**  
    After selecting the template, click the `Create a new repository` button to generate your own repository for the project.
@@ -53,94 +64,137 @@ This repository introduces enhanced modes that make it easier to develop, manage
 ---
 
 ## Modes
-### ⚡️ SPARC Orchestrator (including memory bank)
-**Role:** Breaks down large objectives into delegated subtasks aligned to the SPARC methodology.  
+
+### ⚡️ Orchestrator
+**Role:** A strategic workflow orchestrator who breaks down complex tasks and delegates them to specialized modes.
 **Focus:** Secure, modular, testable, and maintainable delivery using advanced reasoning models.
 
 ---
 
-### 📋 Specification & Pseudocode (including memory bank)
-**Role:** Captures the complete project context and produces a modular pseudocode blueprint with TDD anchors.  
+### 📋 Specification & Pseudocode
+**Role:** Translates project requirements into modular pseudocode with TDD anchors.
 **Focus:** Clear, modular design; externalizes configuration; splits complex logic across modules.
 
 ---
 
-### 🏗️ Architect (including memory bank)
-**Role:** Designs scalable, secure, and modular architectures based on requirements and pseudocode.  
+### 🏗️ Architect
+**Role:** Designs scalable, secure, and modular architectures based on requirements and pseudocode.
 **Focus:** Detailed system diagrams, data flows, API boundaries, and service segmentation.
 
 ---
 
-### 🧠 Code (including memory bank)
-**Role:** Implements robust, efficient code using externalized configurations.  
+### 🧠 Code
+**Role:** Implements robust, efficient code using externalized configurations.
 **Focus:** Clean, modular code split into files under 500 lines, with no hard-coded secrets.
 
 ---
 
-### 🧪 TDD (including memory bank)
-**Role:** Enforces Test-Driven Development by writing failing tests first and then minimal code followed by refactoring.  
+### 🧪 TDD
+**Role:** Enforces Test-Driven Development by writing failing tests first and then minimal code followed by refactoring.
 **Focus:** Thorough test coverage, modular test files, and adherence to security practices.
 
 ---
 
-### 🪲 Debug (including memory bank)
-**Role:** Troubleshoots and resolves runtime issues using logging, tracing, and analysis tools.  
+### 🪲 Debug
+**Role:** Troubleshoots and resolves runtime issues using logging, tracing, and analysis tools.
 **Focus:** Isolates and fixes bugs while keeping fixes modular and secure.
 
 ---
 
-### 🛡️ Security Reviewer (including memory bank)
-**Role:** Audits code and architecture to identify vulnerabilities and enforce secure practices.  
+### 🛡️ Security Reviewer
+**Role:** Audits code and architecture to identify vulnerabilities and enforce secure practices.
 **Focus:** Detects exposed secrets, oversized files, and non-modular code, recommending necessary mitigations.
 
 ---
 
-### 📚 Documentation Writer (including memory bank)
-**Role:** Produces clear, comprehensive Markdown documentation for usage, configuration, and integration.  
+### 📚 Documentation Writer
+**Role:** Produces clear, comprehensive Markdown documentation for usage, configuration, and integration.
 **Focus:** Modular documentation (files under 500 lines) that avoids exposing sensitive data.
 
 ---
 
-### 🔗 Integrator (including memory bank)
-**Role:** Merges outputs from all specialized modes into a cohesive final product.  
+### 🔗 Integrator
+**Role:** Merges outputs from all specialized modes into a cohesive final product.
 **Focus:** Seamless integration of components ensuring modularity and adherence to security standards.
 
 ---
 
-### 📈 Post-Deployment Monitor (including memory bank)
-**Role:** Monitors system performance post-deployment, collecting metrics, logs, and user feedback.  
+### 📈 Post-Deployment Monitor
+**Role:** Monitors system performance post-deployment, collecting metrics, logs, and user feedback.
 **Focus:** Continuous monitoring with secure, modular configurations and prompt escalation of issues.
 
 ---
 
-### 🧹 Optimizer (including memory bank)
-**Role:** Continuously refines and optimizes the codebase for performance, modularity, and maintainability.  
+### 🧹 Optimizer
+**Role:** Continuously refines and optimizes the codebase for performance, modularity, and maintainability.
 **Focus:** Refactoring, splitting large files, and externalizing configurations to meet best practices.
 
 ---
 
-### ❓ Ask (including memory bank)
-**Role:** Guides users in formulating precise, modular requests to delegate tasks to the correct specialized modes.  
+### ❓ Ask
+**Role:** Guides users in formulating precise, modular requests to delegate tasks to the correct specialized modes.
 **Focus:** Providing task formulation and delegation strategies for effective inquiries.
 
 ---
 
-### 🚀 DevOps (including memory bank)
-**Role:** Manages deployments and infrastructure operations across cloud providers, edge platforms, and internal environments.  
+### 🚀 DevOps
+**Role:** Manages deployments and infrastructure operations across cloud providers, edge platforms, and internal environments.
 **Focus:** Secure, traceable, and automated deployments using CI/CD pipelines and managed configuration with no hard-coded credentials.
 
 ---
 
-### 📘 SPARC Tutorial (including memory bank)
-**Role:** Guides new users through the SPARC development process using structured thinking models and clear task delegation with `new_task`.  
+### 📘 SPARC Tutorial
+**Role:** Guides new users through the SPARC development process using structured thinking models and clear task delegation with `new_task`.
 **Focus:** Educates on modular project setup, best practices (no hard-coded environment variables; files under 500 lines), and effective mode-to-mode handoffs with concise completions via `attempt_completion`.
 
 ---
+## Configuration Optimization (Token Usage Improvement)
 
-### 🪃 Boomerang mode (including memory bank)
-**Role:** A strategic workflow orchestrator who efficiently coordinates complex tasks by delegating them to specialized modes. Ensures seamless task breakdown, delegation, and synthesis of results using structured tools and memory tracking.
+To improve performance, maintainability, and reduce token consumption, the `.roomodes` configuration has been optimized. This "fork" of the original configuration focuses on consolidating redundant instructions and clarifying the roles of each mode.
 
-**Focus:** Facilitates modular workflows by leveraging mode-specific expertise and maintaining clarity in task delegation. Uses the memory bank to track progress, analyze outcomes, and optimize workflows for improved efficiency.
+### The Problem: Redundancy and Verbosity
+
+The original `.roomodes` file contained significant repetition across mode definitions:
+- **Repeated Instructions**: Common rules about file size limits (`< 500 lines`), use of `attempt_completion`, and prohibitions on hardcoding secrets were repeated in many modes.
+- **Verbose Definitions**: Role definitions and custom instructions were lengthy.
+- **Overlapping Roles**: Orchestrator modes like `sparc` and `boomerang` had similar functions.
+
+### The Solution: A Streamlined Approach
+
+The optimization plan is based on the following principles:
+
+1.  **Core Principles**: A set of common rules is established and referenced, rather than repeated. These are:
+    *   **Modularity**: Keep files under 500 lines.
+    *   **Security**: Never hardcode secrets or environment variables.
+    *   **Clarity**: Use `attempt_completion` to signal completion with a clear summary.
+    *   **Delegation**: Use `new_task` to delegate subtasks to other modes.
+
+2.  **Consolidated Orchestration**: The `sparc` and `boomerang` modes are merged into a single, primary orchestrator to simplify the workflow.
+
+3.  **Concise Instructions**: Each mode's instructions are rewritten to be direct and focused on its unique responsibilities.
+
+### Visualizing the New Workflow
+
+This diagram illustrates the simplified mode hierarchy:
+
+```mermaid
+graph TD
+    subgraph "Original Structure"
+        direction LR
+        U1[User] --> A[ask];
+        U1 --> S[sparc];
+        U1 --> B[boomerang];
+    end
+
+    subgraph "Optimized Structure"
+        direction LR
+        U2[User] --> Ask_New[ask];
+        Ask_New --> Orchestrator_New[Orchestrator];
+        Orchestrator_New --> Specialist_Modes[Specialist Modes];
+    end
+```
+
+This streamlined approach reduces complexity and makes the development workflow more intuitive.
 
 ---
 
@@ -159,12 +213,5 @@ roocode-workflow automatically manages these files. You generally don't need to 
 
 ---
 
-## Credits
-- **RooFlow (0.3.6)**: https://github.com/GreatScottyMac/RooFlow
-- **roocode-modes**: https://github.com/enescingoz/roocode-modes
-- https://www.linkedin.com/pulse/boomerang-tasks-automating-code-development-roo-sparc-reuven-cohen-nr3zc
-
----
-
 ## License
-[Apache 2.0](https://github.com/enescingoz/roocode-workspace/blob/main/LICENSE)
+[Apache 2.0](https://github.com/benzntech/roocode-workspace/blob/main/LICENSE)
